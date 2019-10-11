@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title> Perform Addition using Celery </title>
+    </head>
+    <body>
+        <form action="{% url 'home' %}" method="POST" role="form">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>A</td>
+                    <td>=</td> 
+                    <td>{{ form.a }}</td>
+                </tr>
+                <tr> 
+                    <td> + </td>
+                </tr> 
+                <tr> 
+                    <td>B</td> 
+                    <td>=</td> 
+                    <td>{{ form.b }}</td>
+                </tr>
+                </tr> 
+                    <td> <button type="submit" class="btn btn-success" id="add-btn">Add it!<i class="fas fa-check-circle"></i> </td> 
+                </tr>
+            </table>
+         </form>
+    <body>
+</html>

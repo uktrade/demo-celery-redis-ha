@@ -1,0 +1,19 @@
+<html>
+    <head> 
+        <title> Task Status {{ task_id }} </title> 
+    </head>
+    <body>
+        <table>
+            <tr><td>task_id: {{ task_id }}</td></tr>
+            <tr><td>task_status: {{ task_status }}</td></tr>
+            <tr><td>task_result: {{ result }}</td></tr>
+
+            <tr>
+                <td>
+                    <form action="{%url 'home'%}" role="form">
+                        <button type="submit">Back to Home</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+</html>

@@ -1,0 +1,6 @@
+django==2.2.6
+django-environ==0.4.5
+dj-redis-url==0.1.4
+gunicorn==19.9.0
+celery==4.3.0
+redis==3.3.8
